@@ -59,7 +59,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         User user = User.builder()
                 .username(input.getUsername())
                 .password(passwordEncoder.encode(input.getPassword()))
-                .role(UserRole.USER)
+                .role(UserRole.ADMIN)
                 .preferences(savedPreferences)
                 .build();
 
